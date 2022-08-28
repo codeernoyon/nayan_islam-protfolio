@@ -6,83 +6,81 @@ export const PORTFOLIO = {
   types: ['All', 'Website', 'Mobile App', 'UI/UX Design', 'Graphic Design'],
   projects: [
     {
-      title: 'VISCO Landing Page',
+      title: 'Screen Shot app',
       description:
-        'Adipisicing Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      video:
-        'https://ak.picdn.net/shutterstock/videos/1076130974/preview/stock-footage-diverse-company-employees-having-online-business-conference-video-call-on-tv-screen-monitor-in.mp4',
+        'This is a screen shot app',
+      video:'',
       images: {
-        default: '/Asset/portfolio/bash-landing-page.jpg',
+        default: '/Asset/portfolio/screenShot-app.png',
         variants: [
-          '/Asset/portfolio/bash-landing-page.jpg',
-          '/Asset/portfolio/bash-landing-page.jpg',
+          '/Asset/portfolio/screenShot-app.png',
+          '/Asset/portfolio/screenShot-app.png',
         ],
       },
-      link: 'https://ksdevware.com',
+      link: 'https://screen-shot.netlify.app/',
       type: 'Website',
       tags: ['Web Design', 'Graphic Design', 'Mobile Apps'],
     },
     {
-      title: 'Bash Landing Page',
+      title: 'Daraz clone',
       description:
-        'Adipisicing Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      video: 'https://vimeo.com/208819209',
+        'Daraz is a e-commerce web site.',
+      video: '',
       images: {
-        default: '/Asset/portfolio/bash-landing-page-1.png',
+        default: '/Asset/portfolio/daraz-clon.png',
         variants: [
-          '/Asset/portfolio/bash-landing-page-1.png',
-          '/Asset/portfolio/bash-landing-page-1.png',
+          '/Asset/portfolio/daraz-clon.png',
+          '/Asset/portfolio/daraz-clon.png',
         ],
       },
-      link: 'https://ksdevware.com',
-      type: 'Graphic Design',
+      link: 'https://daraz-clon.netlify.app/',
+      type: 'Website',
       tags: ['Web Design', 'Graphic Design', 'Mobile Apps'],
     },
     {
-      title: 'Bash Landing Page',
+      title: 'Unsplash Clone',
       description:
-        'Adipisicing Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      video: 'https://www.youtube.com/watch?v=zw7fXtKqTkg',
+        'Clone Unsplash',
       images: {
-        default: '/Asset/portfolio/bash-landing-page-2.png',
+        default: '/Asset/portfolio/unsplash-clon.png',
         variants: [
-          '/Asset/portfolio/bash-landing-page-2.png',
-          '/Asset/portfolio/bash-landing-page-2.png',
+          '/Asset/portfolio/unsplash-clon.png',
+          '/Asset/portfolio/unsplash-clon.png',
         ],
       },
-      link: 'https://ksdevware.com',
-      type: 'UI/UX Design',
+      link: 'https://unsplash-clon.netlify.app/',
+      type: 'Website',
       tags: ['Web Design', 'Graphic Design', 'Mobile Apps'],
     },
     {
-      title: 'Bash Landing Page',
+      title: 'Music App',
       description:
-        'Adipisicing Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        'Music app',
       video: null,
       images: {
-        default: '/Asset/portfolio/visco-landing-page.png',
+        default: '/Asset/portfolio/musice-app.png',
         variants: [
-          '/Asset/portfolio/visco-landing-page.png',
-          '/Asset/portfolio/visco-landing-page.png',
+          '/Asset/portfolio/musice-app.png',
+          '/Asset/portfolio/musice-app.png',
         ],
       },
-      link: 'https://ksdevware.com',
-      type: 'UI/UX Design',
+      link: 'https://play-music-player.netlify.app/',
+      type: 'Mobile App',
       tags: ['Web Design', 'Graphic Design', 'Mobile Apps'],
     },
     {
-      title: 'VISCO Landing Page',
+      title: 'Git Hub repo search',
       description:
-        'Adipisicing Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        'Git hub repo search',
       video: null,
       images: {
-        default: '/Asset/portfolio/visco-landing-page.png',
+        default: '/Asset/portfolio/gitHub-search.png',
         variants: [
-          '/Asset/portfolio/visco-landing-page.png',
-          '/Asset/portfolio/visco-landing-page.png',
+          '/Asset/portfolio/gitHub-search.png',
+          '/Asset/portfolio/gitHub-search.png',
         ],
       },
-      link: 'https://ksdevware.com',
+      link: 'https://github-accounts-search.netlify.app/',
       type: 'Website',
       tags: ['Web Design', 'Graphic Design', 'Mobile Apps'],
     },
