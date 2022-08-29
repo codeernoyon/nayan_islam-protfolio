@@ -64,7 +64,7 @@ function Header() {
         </span>
         {/* ==== Menus ==== */}
         <div
-          className={`${!opened && "absolute bg-teal-700 right-[-500px] md:right-0 transition-all duration-500 ease-in-out "} absolute top-[55px] right-0 bg-slate-800 md:relative md:top-0  z-[998] justify-center  md:justify-between items-center w-screen h-screen md:h-auto  flex md:flex md:w-auto md:order-1 md:bg-transparent transition-all duration-1000 ease-in-out`}
+          className={`${!opened && "absolute bg-teal-700 right-[-780px] md:right-0 transition-all duration-500 ease-in-out "} absolute top-[55px] right-0 bg-slate-800 md:relative md:top-0  z-[998] justify-center  md:justify-between items-center w-screen h-screen md:h-auto  flex md:flex md:w-auto md:order-1 md:bg-transparent transition-all duration-1000 ease-in-out`}
           id="mobile-menu-4"
         >
           <nav className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-base md:font-medium">
