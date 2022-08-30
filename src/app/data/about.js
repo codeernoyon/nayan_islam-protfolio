@@ -30,7 +30,7 @@ export const ABOUT = {
     },
     {
       title: "Web Design",
-      text: "I have 3 years of experience about web design.",
+      text: "I have 3 years of experience about web design.I've Worked On Varied Projects Ranging From Simple Websites, Landing Pages To Complex Web Applications.",
       icon: <SiAdobeindesign size={33} />,
     },
   ],

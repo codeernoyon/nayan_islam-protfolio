@@ -25,9 +25,9 @@ function About() {
               title={title}
               subtitle={`Expert in`}
               typeWriter={exports}
-              className="md:text-left text-center"
+              className="md:text-left text-center "
             />
-            <p className="text-gray-500 max-w-full text-center md:text-left">
+            <p className="text-gray-500 max-w-full text-justify md:text-left">
               {description}
             </p>
             {/* ==== Services ==== */}
