@@ -1,19 +1,25 @@
+import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import { AiOutlineClose, AiOutlineDownload, AiOutlineMenu } from "react-icons/ai";
+import {
+  AiOutlineClose,
+  AiOutlineDownload,
+  AiOutlineMenu,
+} from "react-icons/ai";
 import { Events, Link, scrollSpy } from "react-scroll";
+import { headerAnimation } from "../../../animation";
 import { HEADER, HERO } from "../../../data";
 import { Button } from "../../elements";
 
-
-
 function Header() {
-  const { button } = HERO
+  const { button } = HERO;
   const [opened, setOpened] = useState(false);
   const [navbarSticky, setNavbarSticky] = useState(false);
 
-  const { logo, menus } = HEADER
+  const { logo, menus } = HEADER;
+  const { headerAnim } = headerAnimation;
 
-  const nav = () => window.scrollY > 20 ? setNavbarSticky(true) : setNavbarSticky(false);
+  const nav = () =>
+    window.scrollY > 20 ? setNavbarSticky(true) : setNavbarSticky(false);
 
   useEffect(() => {
     // add event listener for scroll (react-scroll)
@@ -31,8 +37,12 @@ function Header() {
   }, []);
 
   return (
-    <header
-      className={`z-[999] w-full bg-slate-800 md:bg-transparent text-slate-200 fixed top-0 shadow-md sm:py-4 py-2.5 ${navbarSticky && "NavBar__sticky"}`}
+    <motion.header
+      initial={headerAnim.start}
+      animate={headerAnim.end}
+      className={`z-[999] w-full bg-slate-800 md:bg-transparent text-slate-200 fixed top-0 shadow-md sm:py-4 py-2.5 ${
+        navbarSticky && "NavBar__sticky"
+      }`}
     >
       <div className="relative container flex flex-wrap items-center justify-between">
         {/* ==== Logo ==== */}
@@ -64,16 +74,19 @@ function Header() {
         </span>
         {/* ==== Menus ==== */}
         <div
-          className={`${!opened && "absolute bg-teal-700 right-[-780px] md:right-0 transition-all duration-500 ease-in-out "} absolute top-[55px] right-0 bg-slate-800 md:relative md:top-0  z-[998] justify-center  md:justify-between items-center w-screen h-screen md:h-auto  flex md:flex md:w-auto md:order-1 md:bg-transparent transition-all duration-1000 ease-in-out`}
+          className={`${
+            !opened &&
+            "absolute bg-teal-700 right-[-780px] md:right-0 transition-all duration-500 ease-in-out "
+          } absolute top-[55px] right-0 bg-slate-800 md:relative md:top-0  z-[998] justify-center  md:justify-between items-center w-screen h-screen md:h-auto  flex md:flex md:w-auto md:order-1 md:bg-transparent transition-all duration-1000 ease-in-out`}
           id="mobile-menu-4"
         >
-          <nav className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-base md:font-medium">
+          <nav className="relative top-[-60px] md:top-0 flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-base md:font-medium">
             {menus.map((link, index) => {
               return (
                 <Link
                   activeClass="NavBar__active_menu"
                   key={index}
-                  className={`NavBar__menu`}
+                  className={`NavBar__menu menu`}
                   to={link.to}
                   spy={true}
                   smooth={true}
@@ -84,29 +97,21 @@ function Header() {
                 </Link>
               );
             })}
-            {!opened ?
-                    <Button 
-                    href={button.url}
-                    className='md:hidden'
-
-                      >
-                          {button.text}
-                          <AiOutlineDownload className="block md:hidden" />
-                      </Button>
-                    : 
-                    <Button 
-                    href={button.url}
-                    className='md:hidden'
-                    
-                      >
-                          {button.text}
-                          <AiOutlineDownload className="ml-1 text-lg" />
-                      </Button>
-                    }
+            {!opened ? (
+              <Button href={button.url} className="md:hidden">
+                {button.text}
+                <AiOutlineDownload className="block md:hidden" />
+              </Button>
+            ) : (
+              <Button href={button.url} className="md:hidden">
+                {button.text}
+                <AiOutlineDownload className="ml-1 text-lg" />
+              </Button>
+            )}
           </nav>
         </div>
       </div>
-    </header>
+    </motion.header>
   );
 }
 

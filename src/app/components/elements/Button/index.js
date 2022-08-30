@@ -1,5 +1,4 @@
-
-function Button({ children, className,  ...rest }) {
+function Button({ children, className, ...rest }) {
   return (
     <a
       className={` 
@@ -8,13 +7,14 @@ function Button({ children, className,  ...rest }) {
         rounded-[5px] cursor-pointer bg-transparent hover:text-primary-color
         transition-all duration-300 ease-in-out
         ${className}
+        
       `}
       {...rest}
-    
+      download
     >
       <button className="flex items-center gap-2 w-full">{children}</button>
     </a>
-  )
+  );
 }
 
-export default Button
+export default Button;
