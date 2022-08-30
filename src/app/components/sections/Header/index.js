@@ -8,7 +8,7 @@ import {
 import { Events, Link, scrollSpy } from "react-scroll";
 import { headerAnimation } from "../../../animation";
 import { HEADER, HERO } from "../../../data";
-import { Button } from "../../elements";
+import { Button, SocialIcons } from "../../elements";
 
 function Header() {
   const { button } = HERO;
@@ -98,15 +98,21 @@ function Header() {
               );
             })}
             {!opened ? (
-              <Button href={button.url} className="md:hidden">
-                {button.text}
-                <AiOutlineDownload className="block md:hidden" />
-              </Button>
+              <>
+                <SocialIcons />
+                <Button href={button.url} className="md:hidden">
+                  {button.text}
+                  <AiOutlineDownload className="block md:hidden" />
+                </Button>
+              </>
             ) : (
-              <Button href={button.url} className="md:hidden">
-                {button.text}
-                <AiOutlineDownload className="ml-1 text-lg" />
-              </Button>
+              <>
+                <SocialIcons />
+                <Button href={button.url} className="md:hidden">
+                  {button.text}
+                  <AiOutlineDownload className="ml-1 text-lg" />
+                </Button>
+              </>
             )}
           </nav>
         </div>

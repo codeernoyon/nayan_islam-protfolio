@@ -14,7 +14,7 @@ function Hero() {
       <img
         src={bgImage}
         alt="Hero Background"
-        className="absolute w-3/4  right-0 h-full object-cover bg-top	 z-1"
+        className="absolute w-screen  right-0 h-screen object-cover bg-top	 z-1"
         loading="lazy"
       />
       {/* ==== Hero Content ==== */}
