@@ -1,23 +1,22 @@
-import { motion } from 'framer-motion';
-import { contactAnimation } from '../../../animation';
+import { motion } from "framer-motion";
+import { contactAnimation } from "../../../animation";
 import { CONTACT } from "../../../data";
 import { ContactForm, ContactInfo, SectionTitle } from "../../elements";
 
-
 function Contact() {
   const { title, subtitle, typeWriter, email } = CONTACT;
-  const {contentAnimation} = contactAnimation
+  const { main } = contactAnimation;
 
   return (
     <motion.section
-    initial={"start"}
-    whileInView={"end"}
-    viewport={{amount: .3}}
-    transition={{staggerChildren: .5}}
-    name="Contact" className="element overflow-hidden">
-      <motion.div 
-        variants={contentAnimation}
-      className="container opacity-0">
+      initial={"start"}
+      whileInView={"end"}
+      viewport={{ amount: 0.3 }}
+      transition={{ staggerChildren: 0.5 }}
+      name="Contact"
+      className="element overflow-hidden"
+    >
+      <motion.div variants={main} className="container opacity-0">
         {/* ==== Section Title ==== */}
         <SectionTitle
           title={title}

@@ -7,11 +7,11 @@ import { SiAdobeindesign } from "react-icons/si";
 
 export const ABOUT = {
   title: "About Me",
-  name: "Khalid Saifullah",
+  name: "Noyon Islam",
   description:
     "I am a web developer with a passion for building beautiful, responsive websites and applications. I have a background in graphic design and I am currently working on a career in web development.",
   exports: ["JavaScript", "React", "UI/UX"],
-  image: "/Asset/me2.png",
+  image: "/Asset/noyon.png",
   services: [
     {
       title: "Web Development",
