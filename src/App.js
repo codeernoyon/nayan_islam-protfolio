@@ -1,16 +1,13 @@
 import {
-  Header,
-  Hero,
-  About,
-  Resume,
-  Portfolio,
-  Contact,
+  About, Contact,
   // Blogs,
-  Footer,
+  Footer, Header,
+  Hero, Portfolio, Resume
 } from "./app/components/sections";
 
 function App() {
   return (
+    
     <>
       <Header />
       <Hero />
