@@ -9,16 +9,18 @@ function Hero() {
   const { content, icons, experience } = HeroAnimation;
 
   return (
-    <section className="relative h-screen flex overflow-hidden" name="Hero">
+    <section className="relative h-screen flex overflow-x-hidden" name="Hero">
       {/* ==== Hero Background Image ==== */}
+      <div className=" absolute w-screen top-0 right-0 0 h-screen bg-slate-900 z-10 backdrop-filter backdrop-blur-lg bg-opacity-10"></div>
+
       <img
         src={bgImage}
         alt="Hero Background"
-        className="absolute w-screen  right-0 h-screen object-cover bg-top	 z-1"
+        className="absolute w-screen h-screen top-0  right-0 object-cover bg-top	 z-1"
         loading="lazy"
       />
       {/* ==== Hero Content ==== */}
-      <div className="container flex items-center relative z-2">
+      <div className="container flex items-center relative z-20">
         <motion.div
           className="flex items-center justify-center flex-col w-[100%] sm:items-start sm:justify-start"
           initial={content.start}
